@@ -1,0 +1,76 @@
+body{
+    color: rgba(0,0,0,0.7);
+    font: 'Merienda One', Helvetica, sans-serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: auto auto auto auto;
+    width: 50%;
+    
+}
+
+legend{
+    background-color: white;
+    border-radius: 5px;
+}
+
+li{
+    text-align: left;
+
+    background: rgb(130, 147, 245); 
+    border-radius: 5px;
+    display: flex;
+    list-style-type: none;
+    margin: 10px auto 10px auto;
+    height: 3pc;
+    width: 100%;
+}
+
+li:nth-child(odd) { background: white; }
+
+
+.checkbox{
+    margin: auto 10px auto;
+}
+
+
+#inputBotao{
+    width: 60%;
+    margin: 10px auto 10px auto;
+    padding: 0 0 0 0;
+
+}
+
+#inputTarefas{
+    width: inherit;
+    margin: 0 0 0 0;
+
+}
+
+#botaoTarefas{
+    width: fit-content;
+    margin: 0 0 0 0;
+}
+
+#lista{
+    margin: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+
+}
+#lista button {
+    margin: auto 10px auto auto;
+}
+
+#lista label{
+    size: 40px;
+    font-weight: bold;
+    margin: auto 20px auto;
+}
