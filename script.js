@@ -16,9 +16,9 @@ function adicionaTarefa(){
     }
     else{
         var el = criaNovoElemento(tarefa, false);
+        var elementoLista = document.getElementsByTagName("ul")[0];
         elementoLista.appendChild(el);
         salvarLS();
-        reorganizaItens();
         checaValidacao();
         document.getElementById("inputTarefas").value = "";
     }
@@ -69,7 +69,7 @@ function removeItem(botaoId){
     document.getElementById(idItem).remove();
     localStorage.clear();
     salvarLS();
-    reorganizaItens();
+    //reorganizaItens();
 
 }
 
@@ -125,6 +125,7 @@ function checaValidacao(){
         }
     }
     salvarLS();
+
 }
 
 function reorganizaItens(){
@@ -134,6 +135,8 @@ function reorganizaItens(){
             temElNaLista[i].remove()
         }
         recuperaItensLS();
+    
     }
 
 }
+

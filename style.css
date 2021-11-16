@@ -23,7 +23,7 @@ legend{
 li{
     text-align: left;
 
-    background: rgb(130, 147, 245); 
+    background: white; 
     border-radius: 5px;
     display: flex;
     list-style-type: none;
@@ -32,7 +32,7 @@ li{
     width: 100%;
 }
 
-li:nth-child(odd) { background: white; }
+/* li:nth-child(odd) { background: rgb(130, 147, 245); } */
 
 
 .checkbox{
